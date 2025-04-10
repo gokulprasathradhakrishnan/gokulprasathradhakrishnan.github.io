@@ -45,7 +45,7 @@ window.addEventListener("scroll", () => {
 
 document.querySelectorAll('.accordion-header').forEach(header => {
   header.addEventListener('click', () => {
-    const item = header.parentElement;
+    const item = header.closest('.accordion-item');
     const icon = header.querySelector('.accordion-icon');
 
     item.classList.toggle('active');
