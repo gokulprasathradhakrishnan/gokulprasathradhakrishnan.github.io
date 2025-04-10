@@ -632,6 +632,15 @@ body:not(.user-is-tabbing) a:focus {
   margin-bottom: 10px;
 }
 
+.accordion::after {
+  content: '+';
+  float: right;
+}
+
+.accordion.active::after {
+  content: '-';
+}
+
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
