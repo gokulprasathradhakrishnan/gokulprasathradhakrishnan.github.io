@@ -200,8 +200,8 @@
                 </div>
             </div>
             <div class="button-container">
-                <button class="button" id="prevButton">← Previous</button>
-                <button class="button" id="nextButton">Next →</button>
+                <button class="button" id="prevButton">←</button>
+                <button class="button" id="nextButton">→</button>
             </div>
         </section>
         <footer>
@@ -211,5 +211,42 @@
             <a href="mailto:gokulprasath1609@gmail.com">Email</a>
         </footer>
     </div>
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        let currentSlide = 0;
+
+        const nextButton = document.getElementById('nextButton');
+        const prevButton = document.getElementById('prevButton');
+        const slideContainer = document.getElementById('slide-container');
+
+        function updateSlidePosition() {
+            slideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        nextButton.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlidePosition();
+            }
+        });
+
+        prevButton.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                updateSlidePosition();
+            }
+        });
+
+        // Optional: Arrow key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
+                currentSlide++;
+                updateSlidePosition();
+            } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
+                currentSlide--;
+                updateSlidePosition();
+            }
+        });
+    </script>
 </body>
 </html>
