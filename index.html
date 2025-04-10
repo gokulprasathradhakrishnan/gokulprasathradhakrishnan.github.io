@@ -1,252 +1,276 @@
+<!-- 
+  Hello 😊.
+
+  This template is designed and developed by Nisar Hassan Naqvi
+  for anyone to use for free or customize the way they like.
+
+  Github Repo: https://github.com/nisarhassan12/portfolio-template/
+  My Website: https://nisar.dev
+
+  For business & inquires, contact me => syednisarhassan12@gmail.com
+-->
+
+<!--
+  Follow the instructions written in comments to create your stunning portfolio
+-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gokul Prasath Radhakrishnan</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .slide-container {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-        }
-        .slide {
-            min-width: 100%;
-            transition: transform 0.5s ease;
-            padding: 20px;
-        }
-        .slide h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .slide p {
-            font-size: 18px;
-        }
-        .button-container {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-        }
-        .button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Syed Ali Hussnain | A Web Developer based in Lahore, Pakistan.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
-            <h1>Gokul Prasath Radhakrishnan</h1>
-            <p class="tagline">Data Engineer | AI Enthusiast</p>
-        </header>
-        <section>
-            <h2>Summary</h2>
-            <p>
-    I’m a passionate Data Engineer with nearly two years of hands-on experience in building scalable data solutions and automating workflows using Azure cloud tools. I hold Master's in Artificial Intelligence and Machine Learning at the University of Birmingham, I combine a strong academic foundation with practical expertise in data engineering, cloud computing, and AI.
-  </p>
-  <p>
-    Now, I’m looking to bring this blend of engineering and AI into forward-thinking organizations where I can contribute to data-driven innovation and impactful problem-solving.
-  </p>
-        </section>
-        <section>
-            <h2>Professional Experience</h2>
-            <div class="job">
-                <div class="job-title">Senior Data Engineer</div>
-                <div class="company-name">Addend Analytics, Mumbai, India</div>
-                <div class="dates">01/2023–05/2023</div>
-                <div class="description">
-                    Designed ETL architecture, managed CI/CD pipelines, optimized SQL queries, and administered Azure databases. 
-                    Implemented IAM solutions and cost optimization strategies.
-                </div>
-                <div class="skills">Skills: Data Modelling, Data Warehousing, T-SQL, Azure Cosmos database, Azure Synapse Analytics, Azure DevOps, CI/CD, Azure Function App, Python</div>
-            </div>
 
-            <div class="job">
-                <div class="job-title">Data Engineer</div>
-                <div class="company-name">Addend Analytics, Mumbai, India</div>
-                <div class="dates">08/2021–01/2023</div>
-                <div class="description">
-                    Built ETL pipelines, authored stored procedures, and executed data migrations and warehousing projects.
-                </div>
-                <div class="skills">Skills: Azure Data Factory, Azure Logic Apps, Azure Data Lake, Google BigQuery, ARM templates, Azure Event Hub, Dynamic SQL, Python</div>
-            </div>
+  <!-- ***** Header ***** -->
 
-            <div class="job">
-                <div class="job-title">NLP and Chatbot Intern</div>
-                <div class="company-name">bitWise Academy, USA (Remote)</div>
-                <div class="dates">12/2020–05/2021</div>
-                <div class="description">
-                    Built a contextual AI tutoring chatbot (RASA) for primary students to support course-related tutoring.
-                </div>
-                <div class="skills">Skills: RASA, Python, NLP, NLU</div>
-            </div>
-
-            <div class="job">
-                <div class="job-title">Data Science Intern</div>
-                <div class="company-name">Credo Systemz, Chennai, India</div>
-                <div class="dates">06/2019–11/2019</div>
-                <div class="description">
-                    Built a customer propensity engine to predict course enrolment likelihood.
-                </div>
-                <div class="skills">Skills: Python, Matplotlib, Machine Learning, Predictive modelling</div>
-            </div>
-        </section>
-        <section>
-            <h2>Education</h2>
-            <div class="education">
-                <div class="degree-title">MSc Artificial Intelligence and Machine Learning</div>
-                <div class="institution">University of Birmingham</div>
-                <div class="modules">Modules: Neural Computation, Intelligent Data Analysis, Computer Vision, Evolutionary Computation</div>
-                <div class="grade">Grade: 64.44</div>
-                <div class="skills">Skills: Generative AI, Python, Scikit-learn, PyTorch, PySpark, TensorFlow, Keras, Pyannote, Docker, Matlab, Large Language Model (LLM)</div>
-            </div>
-
-            <div class="education">
-                <div class="degree-title">MSc, Data Science</div>
-                <div class="institution">Coimbatore Institute of Technology</div>
-                <div class="modules">Modules: Statistics, Machine Learning, Natural Language Processing, Cloud Computing, Big Data (Hadoop)</div>
-                <div class="cgpa">CGPA: 7.58</div>
-                <div class="skills">Skills: Python, R, Data processing and Visualisation</div>
-            </div>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>[Your skills go here]</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <div class="project-title">Interpretable Machine Learning for Customer Behaviour Prediction</div>
-                <div class="project-description">
-                    Developed a model to evaluate interpretability for algorithms. Designed metrics to balance accuracy and transparency, improving insights into customer behaviour predictions.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Object Detection Using Deep Learning Models</div>
-                <div class="project-description">
-                    Trained and evaluated object detection models (Faster R-CNN, SSD, YOLO) using TensorFlow 2 on custom datasets. Optimized model performance with Google Cloud AI Platform and powerful GPUs for enhanced training efficiency.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">MRI Segmentation</div>
-                <div class="project-description">
-                    Segmented MRI images using traditional techniques like Otsu thresholding, Canny Edge detection, and K-means clustering, achieving 76% accuracy for 2D slices. Extended to 3D segmentation with Mayavi, achieving 70% accuracy.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Optimization Algorithms for TSP</div>
-                <div class="project-description">
-                    Implemented and optimised Simulated Annealing and Genetic Algorithm for the Traveling Salesman Problem. Improved efficiency by 20% through parameter tuning, analysing performance on datasets of up to 100 cities.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Data Analysis using Principal Component Analysis</div>
-                <div class="project-description">
-                    Experimented with preprocessing and dimensionality reduction of numerical datasets using Principal Component Analysis to analyse and draw conclusions about the datasets to facilitate model training.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Data Warehousing in Azure SQL</div>
-                <div class="project-description">
-                    Designed ETL pipelines for multi-country data integration with robust auditing and failure notifications. Enabled incremental data loading and ensured 99.9% reliability.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">VSLA 2.0</div>
-                <div class="project-description">
-                    Developed event-driven ETL pipelines with multi-language support using Azure Translator, achieving 99.9% reliability.
-                </div>
-            </div>
-        </section>
-        <section>
-            <h2>Why Me</h2>
-            <div class="slide-container" id="slide-container">
-                <!-- Experience & Expertise -->
-                <div class="slide">
-                    <h3>Experience & Expertise</h3>
-                    <p>
-                        As a Data Engineer with nearly two years of hands-on experience and a solid academic foundation in Artificial Intelligence and Machine Learning, I bring the rare combination of deep technical expertise, cloud infrastructure proficiency, and a passion for building scalable data solutions. With a distinction-level MSc from the University of Birmingham, I’ve cultivated a skill set that bridges the gap between classical data engineering and modern AI applications.
-                    </p>
-                </div>
-                
-                <!-- Impact & Recognition -->
-                <div class="slide">
-                    <h3>Impact & Recognition</h3>
-                    <p>
-                        My professional journey at Addend Analytics honed my expertise in designing robust ETL architectures, deploying Azure-based solutions, and driving CI/CD practices. I’ve led and delivered impact-driven projects like VSLA-CARE and Navitas Semiconductor, earning accolades such as the “Shining Star” and “Spot Recognition” awards for my reliability, leadership, and technical mentorship.
-                    </p>
-                </div>
-                
-                <!-- Projects & Skills -->
-                <div class="slide">
-                    <h3>Projects & Skills</h3>
-                    <p>
-                        Beyond work, my projects—from interpretable ML models for customer behavior to object detection and MRI segmentation—reflect my enthusiasm for solving real-world problems through advanced analytics and AI. Certified in Azure Administration and Data Engineering, and trained in tools like PyTorch, Docker, Terraform, and Generative AI, I am well-prepared to deliver data-driven value from day one.
-                    </p>
-                </div>
-            </div>
-            <div class="button-container">
-                <button class="button" id="prevButton">←</button>
-                <button class="button" id="nextButton">→</button>
-            </div>
-        </section>
-        <footer>
-            <p>Connect with me:</p>
-            <a href="#" target="https://github.com/gokulprasathradhakrishnan?tab=repositories">GitHub</a> |
-            <a href="#" target="https://www.linkedin.com/in/gokul-prasath-radhakrishnan-63381015a/">LinkedIn</a> |
-            <a href="mailto:gokulprasath1609@gmail.com">Email</a>
-        </footer>
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <script>
-        const slides = document.querySelectorAll('.slide');
-        let currentSlide = 0;
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Syed Ali Hussnain</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Web Developer based in Lahore, Pakistan.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-        const nextButton = document.getElementById('nextButton');
-        const prevButton = document.getElementById('prevButton');
-        const slideContainer = document.getElementById('slide-container');
+  <main role="main">
 
-        function updateSlidePosition() {
-            slideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
+    <!-- ***** Work ***** -->
 
-        nextButton.addEventListener('click', () => {
-            if (currentSlide < slides.length - 1) {
-                currentSlide++;
-                updateSlidePosition();
-            }
-        });
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
 
-        prevButton.addEventListener('click', () => {
-            if (currentSlide > 0) {
-                currentSlide--;
-                updateSlidePosition();
-            }
-        });
+          <!-- Each div with the work__box class is a project. -->
 
-        // Optional: Arrow key navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
-                currentSlide++;
-                updateSlidePosition();
-            } else if (e.key === 'ArrowLeft' && currentSlide > 0) {
-                currentSlide--;
-                updateSlidePosition();
-            }
-        });
-    </script>
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Portfolio Template</h3>
+              <p>
+                A free Open Source Portfolio for anyone to use for free.
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>Parcel</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nisar.surge.sh" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/nisarhassan12/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Calculator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Notificator</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod,
+                eius.
+              </p>
+              <ul class="work__list">
+                <li>React</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>MongoDB</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Clients ***** -->
+
+    <section class="client" id="clients">
+      <div class="row">
+        <h2>Clients</h2>
+        <div class="client__logos">
+          <!-- Add logos of the clients or companies you'have worked with. -->
+          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />
+          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />
+          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />
+          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />
+          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />
+          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos id
+              nostrum illo harum blanditiis, tenetur eum suscipit cupiditate
+              in vel, ex quam quidem quos mollitia labore aut sunt eius
+              ratione molestiae fuga veniam facere similique voluptate.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Are you looking for a fast-performing and user-friendly website to
+          represent your product or business? or looking for any kind of
+          consultation? or want to ask questions? or have some advice for me
+          or just want to say "Hi 👋" in any case feel free to Let me know. I
+          will do my best to respond back. 😊 The quickest way to reach out to
+          me is via an email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:you@example.com" class="btn">you@example.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">
+            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/nisarhassan12/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">
+            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href=https://www.linkedin.com/in/nisar-hassan-naqvi-413466199/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
