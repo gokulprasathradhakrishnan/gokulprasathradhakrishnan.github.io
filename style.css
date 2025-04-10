@@ -606,6 +606,32 @@ body:not(.user-is-tabbing) a:focus {
     transform: translateY(3px);
 }
 
+.accordion {
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.accordion:hover {
+  background-color: #e0e0e0;
+}
+
+.panel {
+  padding: 0 10px;
+  display: none;
+  overflow: hidden;
+  background-color: #fafafa;
+  border-left: 3px solid #f48fb1;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
