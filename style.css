@@ -607,29 +607,46 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .accordion {
-  cursor: pointer;
-  font-weight: bold;
-  background-color: #f0f0f0;
+  background-color: transparent;
+  color: #fff;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-header {
+  background: none;
   border: none;
-  padding: 10px;
-  text-align: left;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
-  transition: 0.3s;
-  border-radius: 5px;
+  padding: 0;
 }
 
-.accordion:hover {
-  background-color: #e0e0e0;
+.accordion-icon {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
 }
 
-.panel {
-  padding: 0 10px;
-  display: none;
+.accordion-content {
+  max-height: 0;
   overflow: hidden;
-  background-color: #fafafa;
-  border-left: 3px solid #f48fb1;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  transition: max-height 0.3s ease;
+  padding-left: 1rem;
+  border-left: 2px solid #fff;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 500px; /* adjust as needed */
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(45deg); /* changes + to – visually */
 }
 
 .accordion::after {
