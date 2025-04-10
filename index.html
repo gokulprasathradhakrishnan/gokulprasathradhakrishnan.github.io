@@ -6,211 +6,198 @@
     <title>Gokul Prasath Radhakrishnan</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .slide-container {
-            display: flex;
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
         }
-        .slide {
-            min-width: 100%;
-            transition: transform 0.5s ease;
-            padding: 20px;
+        
+        header {
+            background-color: #5C6BC0;
+            color: #fff;
+            text-align: center;
+            padding: 40px 0;
         }
-        .slide h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
+
+        .profile-pic {
+            width: 150px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin-bottom: 20px;
         }
-        .slide p {
-            font-size: 18px;
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
         }
+
+        .tagline {
+            font-size: 20px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        section {
+            padding: 30px 10%;
+            margin: 20px 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
         .button-container {
             position: absolute;
             bottom: 20px;
             width: 100%;
             display: flex;
             justify-content: space-between;
+            padding: 0 15%;
         }
+
         .button {
             background-color: #4CAF50;
             color: white;
             border: none;
-            padding: 10px;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
             cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .slide-container {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .slide h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .slide p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #4CAF50;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 30px 5%;
+            }
+
+            .button-container {
+                padding: 0 10%;
+            }
         }
     </style>
 </head>
 <body>
+
     <div class="container">
         <header>
             <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
             <h1>Gokul Prasath Radhakrishnan</h1>
             <p class="tagline">Data Engineer | AI Enthusiast</p>
         </header>
+
+        <!-- Summary Section -->
         <section>
             <h2>Summary</h2>
-            <p>
-    I’m a passionate Data Engineer with nearly two years of hands-on experience in building scalable data solutions and automating workflows using Azure cloud tools. I hold Master's in Artificial Intelligence and Machine Learning at the University of Birmingham, I combine a strong academic foundation with practical expertise in data engineering, cloud computing, and AI.
-  </p>
-  <p>
-    Now, I’m looking to bring this blend of engineering and AI into forward-thinking organizations where I can contribute to data-driven innovation and impactful problem-solving.
-  </p>
+            <p>I’m a passionate Data Engineer with nearly two years of hands-on experience in building scalable data solutions and automating workflows using Azure cloud tools. I hold a Master's in Artificial Intelligence and Machine Learning from the University of Birmingham, combining a strong academic foundation with practical expertise in data engineering, cloud computing, and AI.</p>
+            <p>Now, I’m looking to bring this blend of engineering and AI into forward-thinking organizations where I can contribute to data-driven innovation and impactful problem-solving.</p>
         </section>
+
+        <!-- Professional Experience Section -->
         <section>
             <h2>Professional Experience</h2>
+            <!-- Repeat for each job -->
             <div class="job">
                 <div class="job-title">Senior Data Engineer</div>
                 <div class="company-name">Addend Analytics, Mumbai, India</div>
                 <div class="dates">01/2023–05/2023</div>
                 <div class="description">
-                    Designed ETL architecture, managed CI/CD pipelines, optimized SQL queries, and administered Azure databases. 
-                    Implemented IAM solutions and cost optimization strategies.
+                    Designed ETL architecture, managed CI/CD pipelines, optimized SQL queries, and administered Azure databases. Implemented IAM solutions and cost optimization strategies.
                 </div>
                 <div class="skills">Skills: Data Modelling, Data Warehousing, T-SQL, Azure Cosmos database, Azure Synapse Analytics, Azure DevOps, CI/CD, Azure Function App, Python</div>
             </div>
-
-            <div class="job">
-                <div class="job-title">Data Engineer</div>
-                <div class="company-name">Addend Analytics, Mumbai, India</div>
-                <div class="dates">08/2021–01/2023</div>
-                <div class="description">
-                    Built ETL pipelines, authored stored procedures, and executed data migrations and warehousing projects.
-                </div>
-                <div class="skills">Skills: Azure Data Factory, Azure Logic Apps, Azure Data Lake, Google BigQuery, ARM templates, Azure Event Hub, Dynamic SQL, Python</div>
-            </div>
-
-            <div class="job">
-                <div class="job-title">NLP and Chatbot Intern</div>
-                <div class="company-name">bitWise Academy, USA (Remote)</div>
-                <div class="dates">12/2020–05/2021</div>
-                <div class="description">
-                    Built a contextual AI tutoring chatbot (RASA) for primary students to support course-related tutoring.
-                </div>
-                <div class="skills">Skills: RASA, Python, NLP, NLU</div>
-            </div>
-
-            <div class="job">
-                <div class="job-title">Data Science Intern</div>
-                <div class="company-name">Credo Systemz, Chennai, India</div>
-                <div class="dates">06/2019–11/2019</div>
-                <div class="description">
-                    Built a customer propensity engine to predict course enrolment likelihood.
-                </div>
-                <div class="skills">Skills: Python, Matplotlib, Machine Learning, Predictive modelling</div>
-            </div>
+            <!-- Add other job experiences here -->
         </section>
-        <section>
-            <h2>Education</h2>
-            <div class="education">
-                <div class="degree-title">MSc Artificial Intelligence and Machine Learning</div>
-                <div class="institution">University of Birmingham</div>
-                <div class="modules">Modules: Neural Computation, Intelligent Data Analysis, Computer Vision, Evolutionary Computation</div>
-                <div class="grade">Grade: 64.44</div>
-                <div class="skills">Skills: Generative AI, Python, Scikit-learn, PyTorch, PySpark, TensorFlow, Keras, Pyannote, Docker, Matlab, Large Language Model (LLM)</div>
-            </div>
 
-            <div class="education">
-                <div class="degree-title">MSc, Data Science</div>
-                <div class="institution">Coimbatore Institute of Technology</div>
-                <div class="modules">Modules: Statistics, Machine Learning, Natural Language Processing, Cloud Computing, Big Data (Hadoop)</div>
-                <div class="cgpa">CGPA: 7.58</div>
-                <div class="skills">Skills: Python, R, Data processing and Visualisation</div>
-            </div>
-        </section>
-        <section>
-            <h2>Skills</h2>
-            <p>[Your skills go here]</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <div class="project">
-                <div class="project-title">Interpretable Machine Learning for Customer Behaviour Prediction</div>
-                <div class="project-description">
-                    Developed a model to evaluate interpretability for algorithms. Designed metrics to balance accuracy and transparency, improving insights into customer behaviour predictions.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Object Detection Using Deep Learning Models</div>
-                <div class="project-description">
-                    Trained and evaluated object detection models (Faster R-CNN, SSD, YOLO) using TensorFlow 2 on custom datasets. Optimized model performance with Google Cloud AI Platform and powerful GPUs for enhanced training efficiency.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">MRI Segmentation</div>
-                <div class="project-description">
-                    Segmented MRI images using traditional techniques like Otsu thresholding, Canny Edge detection, and K-means clustering, achieving 76% accuracy for 2D slices. Extended to 3D segmentation with Mayavi, achieving 70% accuracy.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Optimization Algorithms for TSP</div>
-                <div class="project-description">
-                    Implemented and optimised Simulated Annealing and Genetic Algorithm for the Traveling Salesman Problem. Improved efficiency by 20% through parameter tuning, analysing performance on datasets of up to 100 cities.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Data Analysis using Principal Component Analysis</div>
-                <div class="project-description">
-                    Experimented with preprocessing and dimensionality reduction of numerical datasets using Principal Component Analysis to analyse and draw conclusions about the datasets to facilitate model training.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Data Warehousing in Azure SQL</div>
-                <div class="project-description">
-                    Designed ETL pipelines for multi-country data integration with robust auditing and failure notifications. Enabled incremental data loading and ensured 99.9% reliability.
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">VSLA 2.0</div>
-                <div class="project-description">
-                    Developed event-driven ETL pipelines with multi-language support using Azure Translator, achieving 99.9% reliability.
-                </div>
-            </div>
-        </section>
+        <!-- Why Me Section with Slides -->
         <section>
             <h2>Why Me</h2>
             <div class="slide-container" id="slide-container">
-                <!-- Experience & Expertise -->
                 <div class="slide">
                     <h3>Experience & Expertise</h3>
-                    <p>
-                        As a Data Engineer with nearly two years of hands-on experience and a solid academic foundation in Artificial Intelligence and Machine Learning, I bring the rare combination of deep technical expertise, cloud infrastructure proficiency, and a passion for building scalable data solutions. With a distinction-level MSc from the University of Birmingham, I’ve cultivated a skill set that bridges the gap between classical data engineering and modern AI applications.
-                    </p>
+                    <p>As a Data Engineer with nearly two years of hands-on experience and a solid academic foundation in Artificial Intelligence and Machine Learning, I bring a rare combination of deep technical expertise, cloud infrastructure proficiency, and a passion for building scalable data solutions. With a distinction-level MSc from the University of Birmingham, I’ve cultivated a skill set that bridges the gap between classical data engineering and modern AI applications.</p>
                 </div>
-                
-                <!-- Impact & Recognition -->
                 <div class="slide">
                     <h3>Impact & Recognition</h3>
-                    <p>
-                        My professional journey at Addend Analytics honed my expertise in designing robust ETL architectures, deploying Azure-based solutions, and driving CI/CD practices. I’ve led and delivered impact-driven projects like VSLA-CARE and Navitas Semiconductor, earning accolades such as the “Shining Star” and “Spot Recognition” awards for my reliability, leadership, and technical mentorship.
-                    </p>
+                    <p>My professional journey at Addend Analytics honed my expertise in designing robust ETL architectures, deploying Azure-based solutions, and driving CI/CD practices. I’ve led and delivered impact-driven projects like VSLA-CARE and Navitas Semiconductor, earning accolades such as the “Shining Star” and “Spot Recognition” awards for my reliability, leadership, and technical mentorship.</p>
                 </div>
-                
-                <!-- Projects & Skills -->
                 <div class="slide">
                     <h3>Projects & Skills</h3>
-                    <p>
-                        Beyond work, my projects—from interpretable ML models for customer behavior to object detection and MRI segmentation—reflect my enthusiasm for solving real-world problems through advanced analytics and AI. Certified in Azure Administration and Data Engineering, and trained in tools like PyTorch, Docker, Terraform, and Generative AI, I am well-prepared to deliver data-driven value from day one.
-                    </p>
+                    <p>Beyond work, my projects—from interpretable ML models for customer behavior to object detection and MRI segmentation—reflect my enthusiasm for solving real-world problems through advanced analytics and AI. Certified in Azure Administration and Data Engineering, and trained in tools like PyTorch, Docker, Terraform, and Generative AI, I am well-prepared to deliver data-driven value from day one.</p>
                 </div>
             </div>
+
             <div class="button-container">
                 <button class="button" id="prevButton">←</button>
                 <button class="button" id="nextButton">→</button>
             </div>
         </section>
+
+        <!-- Footer -->
         <footer>
             <p>Connect with me:</p>
-            <a href="#" target="https://github.com/gokulprasathradhakrishnan?tab=repositories">GitHub</a> |
-            <a href="#" target="https://www.linkedin.com/in/gokul-prasath-radhakrishnan-63381015a/">LinkedIn</a> |
+            <a href="https://github.com/gokulprasathradhakrishnan?tab=repositories" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/gokul-prasath-radhakrishnan-63381015a/" target="_blank">LinkedIn</a> |
             <a href="mailto:gokulprasath1609@gmail.com">Email</a>
         </footer>
     </div>
+
     <script>
         const slides = document.querySelectorAll('.slide');
         let currentSlide = 0;
@@ -237,7 +224,6 @@
             }
         });
 
-        // Optional: Arrow key navigation
         document.addEventListener('keydown', (e) => {
             if (e.key === 'ArrowRight' && currentSlide < slides.length - 1) {
                 currentSlide++;
