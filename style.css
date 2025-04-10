@@ -649,15 +649,6 @@ body:not(.user-is-tabbing) a:focus {
   transform: rotate(45deg); /* changes + to – visually */
 }
 
-.accordion::after {
-  content: '+';
-  float: right;
-}
-
-.accordion.active::after {
-  content: '-';
-}
-
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
