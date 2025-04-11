@@ -239,6 +239,58 @@
               <div class="accordion-content">
                 <h4>Overview</h4>
                 <p>
+                  This project tackles the classical Travelling Salesman Problem (TSP) using two advanced metaheuristic techniques: 
+                  Simulated Annealing (SA) and Genetic Algorithm (GA). The goal was to find the shortest possible route visiting 
+                  all cities once and returning to the origin. The implementation explores algorithmic strategies, parameter tuning, 
+                  performance comparison, and visualization of optimization paths.
+                </p>
+                
+                <h4>Key Highlights</h4>
+                <ul>
+                  <li>Implemented Simulated Annealing using the Metropolis criterion and 2-opt neighbor generation.</li>
+                  <li>Built a Genetic Algorithm from scratch with permutation encoding, order crossover, and inverse mutation.</li>
+                  <li>Used tournament selection and tuned hyperparameters for both algorithms (e.g., cooling rate, population size).</li>
+                  <li>Compared performance based on average distance, standard deviation, and statistical significance testing.</li>
+                  <li>Ran both algorithms across 30+ iterations to assess stability and variance in outcomes.</li>
+                </ul>
+                <br>
+                <h4>Results</h4>
+                <ul>
+                  <li>Simulated Annealing achieved an average tour distance of <strong>36,578.79</strong> with a standard deviation of 1,119.92.</li>
+                  <li>Genetic Algorithm achieved an average distance of <strong>around 40,000</strong>, but showed higher variability (SD: 1,642.53).</li>
+                  <li>Statistical comparison using the Wilcoxon test indicated a significant difference between SA and GA results.</li>
+                </ul>
+                
+                <h4>Challenges & Learnings</h4>
+                <ul>
+                  <li>Balancing exploration and exploitation was tricky — required careful parameter tuning (especially mutation and cooling rate).</li>
+                  <li>Understanding the impact of random initialization and convergence speed helped improve performance over multiple runs.</li>
+                  <li>Fine-tuning parameters through random search led to better generalization across different city configurations.</li>
+                  <li>Learned that smaller population sizes or poor mutation rates often caused premature convergence in GA.</li>
+                </ul>
+                <br>
+                <h4>Skills & Tools</h4>
+                <ul>
+                  <li>Python, NumPy, Matplotlib</li>
+                  <li>Algorithm Design: Simulated Annealing, Genetic Algorithm</li>
+                  <li>2-opt Optimization, Order Crossover, Inverse Mutation</li>
+                  <li>Statistical Analysis: Wilcoxon Signed-Rank Test</li>
+                  <li>Hyperparameter Tuning, Random Search</li>
+                </ul>
+                <div class="project__links">
+                  <a href="https://github.com/gokulprasathradhakrishnan/Travelling_Salesman_Problem_Using_Simulated_Annealing_And_Genetic_Algorithm" class="btn">Visit Project</a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="accordion-item">
+              <h3 class="accordion-title">Data Analysis using Principal Component Analysis</h3>
+              <button class="accordion-header">
+                <span class="accordion-icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <h4>Overview</h4>
+                <p>
                   This project focuses on applying Principal Component Analysis (PCA) to a housing dataset obtained from Kaggle. 
                   The dataset includes various features related to residential properties. The primary objective was to reduce 
                   dimensionality while preserving variance, identify dominant data patterns, and uncover relationships between 
@@ -270,22 +322,6 @@
                   <li>Data preprocessing and outlier treatment using Winsorization</li>
                   <li>Dimensionality Reduction, Eigenvalue Analysis, VIF Calculation</li>
                 </ul>
-                <div class="project__links">
-                  <a href="https://github.com/gokulprasathradhakrishnan/Travelling_Salesman_Problem_Using_Simulated_Annealing_And_Genetic_Algorithm" class="btn">Visit Project</a>
-                </div>
-              </div>
-            </div>
-    
-            <div class="accordion-item">
-              <h3 class="accordion-title">Data Analysis using Principal Component Analysis</h3>
-              <button class="accordion-header">
-                <span class="accordion-icon">+</span>
-              </button>
-              <div class="accordion-content">
-                <p>
-                  Experimented with preprocessing and dimensionality reduction of numerical datasets using Principal Component 
-                  Analysis to analyse and draw conclusions about the datasets to facilitate model training.
-                </p>
                 <div class="project__links">
                   <a href="https://github.com/gokulprasathradhakrishnan/Analysis_of_House_Price_Using_Principal_Component_Analysis" class="btn">Visit Project</a>
                 </div>
