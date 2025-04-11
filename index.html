@@ -260,7 +260,7 @@
                   <li>Genetic Algorithm achieved an average distance of <strong>around 40,000</strong>, but showed higher variability (SD: 1,642.53).</li>
                   <li>Statistical comparison using the Wilcoxon test indicated a significant difference between SA and GA results.</li>
                 </ul>
-                
+                <br>
                 <h4>Challenges & Learnings</h4>
                 <ul>
                   <li>Balancing exploration and exploitation was tricky — required careful parameter tuning (especially mutation and cooling rate).</li>
@@ -334,10 +334,45 @@
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
+                <h4>Overview</h4>
                 <p>
-                  Designed ETL pipelines for multi-country data integration with robust auditing and failure notifications. Enabled 
-                  incremental data loading and ensured 99.9% reliability.
+                  This project focused on building a scalable and reliable data warehousing solution in Azure SQL for financial data coming from 
+                  Microsoft Business Central. The solution supports automated ETL for multiple countries, includes incremental data loading, 
+                  and robust auditing with failure alerts to ensure high data integrity and observability.
                 </p>
+                
+                <h4>Architecture & Flow</h4>
+                <ul>
+                  <li>Used Business Central API to programmatically extract financial data from multiple country-specific instances.</li>
+                  <li>Created a metadata-driven pipeline using Azure Data Factory (ADF), referencing a control table that stores API endpoints and country codes.</li>
+                  <li>Pipeline dynamically loops through the table, fetching data for each country in sequence.</li>
+                  <li>Watermark table used to manage incremental data loads, ensuring only new/updated records are processed.</li>
+                  <li>Error handling implemented using pipeline activity failure triggers with email notifications.</li>
+                </ul>
+                <br>
+                <h4>Key Highlights</h4>
+                <ul>
+                  <li>Built fully dynamic and scalable ETL pipeline for multi-country data integration.</li>
+                  <li>Implemented robust auditing using a custom audit table — tracks insert count, update count, errors, and timestamps.</li>
+                  <li>Ensured 99.9% reliability with automated failure detection and alerting.</li>
+                  <li>Created SQL views for seamless data consumption by downstream analysts and reporting tools.</li>
+                </ul>
+                <br>
+                <h4>Results</h4>
+                <ul>
+                  <li>Delivered a reliable, maintainable, and scalable data pipeline architecture across multiple geographies.</li>
+                  <li>Enabled business users to access unified and timely financial data for analytics and reporting.</li>
+                  <li>Significantly reduced manual effort in data consolidation through automation and dynamic configurations.</li>
+                </ul>
+                <br>
+                <h4>Skills & Tools</h4>
+                <ul>
+                  <li>Azure Data Factory, Azure SQL Database</li>
+                  <li>Microsoft Business Central API</li>
+                  <li>Incremental Loading with Watermarking</li>
+                  <li>Pipeline Parameterization & Dynamic Datasets</li>
+                  <li>Auditing, Logging, and Error Notification Design</li>
+                </ul>
               </div>
             </div>
     
@@ -347,12 +382,50 @@
                 <span class="accordion-icon">+</span>
               </button>
               <div class="accordion-content">
+                <h4>Overview</h4>
                 <p>
-                  Built an event-driven ETL pipeline with Azure Data Lake Storage, supporting multi-language functionality using Azure 
-                  Translator. Designed Python functions for dynamic XLS to CSV conversion and multi-file uploads. Created a stored 
-                  procedure for processing survey files with upserts, audits, and SCD Type 2 functionality. Implemented comprehensive 
-                  auditing, user registration notifications and failure notifications, achieving near-perfect reliability.
+                  VSLA 2.0 is an event-driven data processing solution built on Azure, designed to handle multilingual survey uploads 
+                  and transform them into structured insights. The system automates data ingestion, transformation, translation, and auditing 
+                  while supporting soft-deletes and dynamic schema evolution.
                 </p>
+              
+                <h4>Architecture & Workflow Automation</h4>
+                <ul>
+                  <li>Survey files are uploaded through a web interface (built by the frontend team), where column names are pre-validated.</li>
+                  <li>Uploaded XLSX files are stored in Azure Blob Storage and processed using an event-based trigger.</li>
+                  <li>Python functions are triggered to convert Excel files to CSV and handle multi-file uploads.</li>
+                  <li>Dynamic schema handling implemented using a staging pivot table to support variable column structures.</li>
+                  <li>Column additions are managed using a control table with flags to dynamically evolve schema before inserting into fact and dimension tables.</li>
+                  <li>Translation pipeline built using Azure Translator, with results stored in backend SQL tables for multilingual support on the frontend.</li>
+                  <li>Soft delete strategy implemented using flags — latest record marked as active for SCD Type 2-like tracking.</li>
+                  <li>CI/CD pipeline developed to promote resources across environments with high reliability.</li>
+                </ul>
+                <br>
+                <h4>Key Highlights</h4>
+                <ul>
+                  <li>Event-driven design using Azure Data Lake Storage and Azure Functions for real-time ETL.</li>
+                  <li>Dynamic XLS to CSV conversion with flexible column handling through a pivot staging model.</li>
+                  <li>Full multilingual support with Azure Translator integration and dedicated translation pipeline.</li>
+                  <li>Custom audit table tracking inserts, updates, error messages, and timestamps for full traceability.</li>
+                  <li>Failure notification system ensures prompt error awareness across all pipeline activities.</li>
+                </ul>
+              <br>
+                <h4>Results</h4>
+                <ul>
+                  <li>Achieved near-perfect reliability with resilient, automated ETL and robust auditing mechanisms.</li>
+                  <li>Enabled multilingual survey data processing for global stakeholders, improving accessibility.</li>
+                  <li>CI/CD automation streamlined the promotion of infrastructure and logic across multiple environments.</li>
+                </ul>
+              <br>
+                <h4>Skills & Tools</h4>
+                <ul>
+                  <li>Azure Data Factory, Azure Blob Storage, Azure Data Lake</li>
+                  <li>Python (XLS to CSV conversion, Azure Function)</li>
+                  <li>Azure Translator API, Azure SQL Database</li>
+                  <li>CI/CD Pipelines (Infrastructure Promotion)</li>
+                  <li>SCD Type 2 Design Pattern, Dynamic Schema Handling</li>
+                  <li>Auditing & Error Notification Systems</li>
+                </ul>
               </div>
             </div>
     
