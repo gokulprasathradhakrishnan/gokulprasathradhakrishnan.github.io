@@ -53,14 +53,16 @@ document.querySelectorAll('.accordion-header').forEach(header => {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const accordions = document.querySelectorAll(".accordion");
-
-  accordions.forEach((accordion) => {
-    accordion.addEventListener("click", function () {
-      this.classList.toggle("active");
-      const panel = this.nextElementSibling;
-      panel.style.display = panel.style.display === "block" ? "none" : "block";
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll(".accordion-header");
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+      // Toggle active class
+      content.classList.toggle("active");
+      // Toggle icon
+      const icon = header.querySelector(".accordion-icon");
+      icon.textContent = icon.textContent === "+" ? "−" : "+";
     });
   });
 });
