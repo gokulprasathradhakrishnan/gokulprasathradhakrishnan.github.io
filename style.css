@@ -638,8 +638,10 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .accordion-content {
-  display: none;
-  margin-top: 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  margin-top: 0;
 }
 
 .accordion-content.active {
@@ -647,7 +649,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .accordion-item.active .accordion-content {
-  max-height: 500px; /* adjust as needed */
+  max-height: 1500px; /* Set high enough to fit your largest content */
+  margin-top: 20px;
 }
 
 .accordion-item.active .accordion-icon {
