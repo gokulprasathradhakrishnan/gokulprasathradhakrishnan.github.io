@@ -612,33 +612,38 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .accordion-item {
-  margin-bottom: 1rem;
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #444;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .accordion-header {
   background: none;
   border: none;
   color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 24px;
   cursor: pointer;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0;
 }
 
 .accordion-icon {
-  margin-left: 10px;
-  transition: transform 0.3s ease;
+  font-size: 28px;
+  margin-left: auto;
 }
 
 .accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-  padding-left: 1rem;
-  border-left: 2px solid #fff;
+  display: none;
+  margin-top: 20px;
+}
+
+.accordion-content.active {
+  display: block;
 }
 
 .accordion-item.active .accordion-content {
