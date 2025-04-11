@@ -648,6 +648,15 @@ body:not(.user-is-tabbing) a:focus {
   display: block;
 }
 
+.accordion-content ul {
+  list-style-type: disc;  /* or circle/square if you prefer */
+  padding-left: 20px;     /* ensures bullets are indented */
+  margin-top: 10px;
+}
+.accordion-content li {
+  margin-bottom: 8px;
+}
+
 .accordion-item.active .accordion-content {
   max-height: 1500px; /* Set high enough to fit your largest content */
   margin-top: 20px;
