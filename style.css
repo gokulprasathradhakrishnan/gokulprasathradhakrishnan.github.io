@@ -657,6 +657,21 @@ body:not(.user-is-tabbing) a:focus {
   transform: rotate(45deg); /* changes + to – visually */
 }
 
+.project__links {
+  margin-top: 20px;
+}
+
+.project__links .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff0055;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
