@@ -43,15 +43,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-document.querySelectorAll('.accordion-header').forEach(header => {
-  header.addEventListener('click', () => {
-    const item = header.closest('.accordion-item');
-    const icon = header.querySelector('.accordion-icon');
-
-    item.classList.toggle('active');
-    icon.textContent = item.classList.contains('active') ? '–' : '+';
-  });
-});
 
 document.addEventListener("DOMContentLoaded", () => {
   const headers = document.querySelectorAll(".accordion-header");
