@@ -611,6 +611,13 @@ body:not(.user-is-tabbing) a:focus {
   color: #fff;
 }
 
+.accordion-content,
+.certification-section,
+.experience-content,
+.project-section {
+  color: #fff;
+}
+
 .accordion-item {
   background-color: #111;
   color: #fff;
