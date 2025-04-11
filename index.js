@@ -55,14 +55,17 @@ document.querySelectorAll('.accordion-header').forEach(header => {
 
 document.addEventListener("DOMContentLoaded", () => {
   const headers = document.querySelectorAll(".accordion-header");
+
   headers.forEach(header => {
     header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
+      const item = header.closest('.accordion-item');
+      const icon = header.querySelector('.accordion-icon');
+
       // Toggle active class
-      content.classList.toggle("active");
+      item.classList.toggle('active');
+
       // Toggle icon
-      const icon = header.querySelector(".accordion-icon");
-      icon.textContent = icon.textContent === "+" ? "−" : "+";
+      icon.textContent = item.classList.contains('active') ? '−' : '+';
     });
   });
 });
