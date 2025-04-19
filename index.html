@@ -213,6 +213,51 @@
                 </div>
               </div>
             </div>
+
+            <div class="accordion-item">
+            <h3 class="accordion-title">Chat with SQL DB Using Streamlit and LangChain</h3>
+            <button class="accordion-header">
+              <span class="accordion-icon">+</span>
+            </button>
+            <div class="accordion-content">
+              <h4>Overview</h4>
+              <p>
+                Built an interactive Streamlit application that allows users to dynamically query and interact with SQL databases using natural language.
+                Leveraged LangChain's SQL agent capabilities powered by the LLaMA 3 model (via Groq API) to interpret user queries and return intelligent
+                results. Integrated support for both local SQLite and external MySQL databases with dynamic connection inputs.
+              </p>
+          
+              <h4>Key Highlights</h4>
+              <ul>
+                <li>Designed a dual-mode DB connector supporting SQLite (locally stored) and remote MySQL access with credential inputs.</li>
+                <li>Implemented LLaMA3-based SQL agent using LangChain’s `create_sql_agent` and Groq’s high-performance LLM API.</li>
+                <li>Built a responsive UI with Streamlit, including sidebar forms, real-time chat interface, and dynamic session state handling.</li>
+                <li>Cached DB configuration using `@st.cache_resource` to avoid redundant loading and improve performance.</li>
+                <li>Handled user messages, assistant responses, and stream callbacks for a real-time conversational experience.</li>
+              </ul>
+              <br>
+              
+              <h4>Results</h4>
+              <ul>
+                <li>Enabled natural language interaction with SQL databases without requiring technical SQL knowledge from end users.</li>
+                <li>Achieved a smooth, responsive app experience thanks to caching and optimized message handling.</li>
+                <li>Successfully demonstrated real-time query execution, error handling, and multi-database support in one unified interface.</li>
+              </ul>
+              <br>
+          
+              <h4>Skills & Tools</h4>
+              <ul>
+                <li>Python, Streamlit, SQLite, MySQL</li>
+                <li>LangChain, ChatGroq, LLaMA3</li>
+                <li>SQLDatabaseToolkit, SQLAlchemy</li>
+                <li>StreamlitCallbackHandler, AgentType.ZERO_SHOT_REACT_DESCRIPTION</li>
+                <li>Prompt Engineering, Natural Language Interfaces</li>
+              </ul>
+              <div class="project__links">
+                  <a href="https://github.com/gokulprasathradhakrishnan/Chat_With_SQL" class="btn">Visit Project</a>
+                </div>
+            </div>
+          </div>
     
             <div class="accordion-item">
               <h3 class="accordion-title">Object Detection Using Deep Learning Models</h3>
